@@ -1,2 +1,2 @@
 # GrammarModel
-Crazy and unrealistic project attempting to modelize grammar 
+Crazy and unrealistic fuckton of classes attempting to modelize grammar 
