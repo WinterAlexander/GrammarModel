@@ -5,7 +5,7 @@ package me.winter.grammar.japanese
  *
  * Created by Alexander Winter on 2017-05-26.
  */
-enum class TopicType(val value: String)
+enum class TopicDeclarationType(val value: String)
 {
     INITIATIVE("は"),
     ADDITIVE("も")

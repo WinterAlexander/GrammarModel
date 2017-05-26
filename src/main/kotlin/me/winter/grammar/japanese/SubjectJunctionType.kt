@@ -7,7 +7,7 @@ package me.winter.grammar.japanese
  */
 enum class SubjectJunctionType(val value: String)
 {
-    ADD("と"),
+    AND("と"),
     OR("か"),
     VAGUE_AND("や") {
         override fun toString(politeness: PolitenessLevel): String
