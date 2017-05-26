@@ -2,12 +2,11 @@ package me.winter.grammar.japanese
 
 /**
  * Undocumented :(
- * <p>
+ *
  * Created by Alexander Winter on 2017-05-26.
  */
-class Noun(value: String) : Subject {
-    private val value = value
-
+class Adjective(private val value: String, private val type: AdjectiveType) : Object
+{
     override fun toString(): String {
         return value
     }

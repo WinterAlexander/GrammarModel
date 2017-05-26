@@ -8,20 +8,17 @@ import me.winter.grammar.Sentence
  *
  * Created by Alexander Winter on 2017-05-26.
  */
-class JapSentence(topic: Topic?, qualifier: Information) : Sentence
+class JapSentence(topic: TopicDeclaration?, information: Information) : Sentence
 {
     private val topic = topic
-    private val info = qualifier
+    private val info = information
 
     override fun toString(): String
     {
         val sb = StringBuilder()
 
         if(topic != null)
-        {
             sb.append(topic.toString())
-            sb.append("は")
-        }
 
         sb.append(info.toString())
 
@@ -29,7 +26,7 @@ class JapSentence(topic: Topic?, qualifier: Information) : Sentence
     }
 
     override fun isValid(): Boolean {
-        return topic == null || !topic.containsQuestionWord()
+        return topic == null || !topic.subject.containsQuestionWord()
     }
 
     override fun getErrors(): List<String> {

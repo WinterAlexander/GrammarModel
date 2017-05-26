@@ -5,9 +5,7 @@ package me.winter.grammar.japanese
  *
  * Created by Alexander Winter on 2017-05-26.
  */
-interface Topic
+interface Subject : Object
 {
     override fun toString(): String
-
-    fun containsQuestionWord(): Boolean
 }

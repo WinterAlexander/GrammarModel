@@ -5,6 +5,14 @@ package me.winter.grammar.japanese
  *
  * Created by Alexander Winter on 2017-05-26.
  */
-interface Pronoun : Subject {
-    override fun toString(): String
+enum class PolitenessLevel
+{
+    DIRECT,
+    NEUTRAL,
+    POLITE,
+    RESPECTFUL,
+    HUMBLE,
+    ;
+
+
 }
