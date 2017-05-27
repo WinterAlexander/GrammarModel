@@ -15,7 +15,7 @@ class SubjectListing(val type: SubjectJunctionType,
             : this(type, PolitenessLevel.NEUTRAL, *subjects)
 
     init {
-        if(subjects.isEmpty())
+        if(subjects.size < 2)
             throw InvalidSubjectListException()
     }
 

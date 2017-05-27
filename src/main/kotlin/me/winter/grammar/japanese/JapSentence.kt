@@ -8,11 +8,9 @@ import me.winter.grammar.Sentence
  *
  * Created by Alexander Winter on 2017-05-26.
  */
-class JapSentence(topic: TopicDeclaration?, information: Information) : Sentence
+class JapSentence(val topic: TopicDeclaration?,
+                  val info: Information) : Sentence
 {
-    private val topic = topic
-    private val info = information
-
     override fun toString(): String
     {
         val sb = StringBuilder()
